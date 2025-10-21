@@ -1,6 +1,6 @@
 import string
 
-password = input()
+password = input("Password: ")
 
 allowed = string.ascii_uppercase + string.ascii_lowercase + string.digits + "-#*"
 
