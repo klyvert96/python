@@ -1,13 +1,11 @@
 prev = int(input())
 curr = int(input())
 
-# вычисляем расход
 if curr >= prev:
     used = curr - prev
 else:
     used = (10000 - prev) + curr
 
-# вычисляем оплату
 if used <= 300:
     cost = 21
 elif used <= 600:
@@ -19,8 +17,6 @@ else:
 
 avg_price = cost / used
 
-# Заголовок с выравниванием по ширине
-print(f"{'Предыдущее':<12}{'Текущее':<10}{'Использовано':<14}{'К оплате':<10}{'Ср. цена m^3':<12}")
-# Данные с выравниванием
-print(f"{prev:<12}{curr:<10}{used:<14}{cost:<10.2f}{avg_price:<12.2f}")
+print(f"{'Previous':<12}{'Current':<10}{'Used':<12}{'To Pay':<10}{'Avg. price/m^3':<15}")
+print(f"{prev:<12}{curr:<10}{used:<12}{cost:<10.2f}{avg_price:<15.2f}")
 
