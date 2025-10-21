@@ -1,5 +1,5 @@
-prev = int(input())
-curr = int(input())
+prev = int(input("Pervious: "))
+curr = int(input("Current: "))
 
 if curr >= prev:
     used = curr - prev
@@ -19,4 +19,3 @@ avg_price = cost / used
 
 print(f"{'Previous':<12}{'Current':<10}{'Used':<12}{'To Pay':<10}{'Avg. price/m^3':<15}")
 print(f"{prev:<12}{curr:<10}{used:<12}{cost:<10.2f}{avg_price:<15.2f}")
-
