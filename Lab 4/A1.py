@@ -2,7 +2,6 @@
 import time
 
 def ask_int(prompt):
-    """Спрашивает целое число — повторяет, пока не будет введено корректно."""
     while True:
         val = input(prompt)
         if val.lstrip('-').isdigit():
@@ -43,7 +42,7 @@ def multiplication_trainer():
         else:
             print(f"Неверно! Правильно: {answer} (Время: {elapsed:.1f} сек)")
 
-    # --- вывод статистики ---
+
     print("=" * 50)
     print("СТАТИСТИКА:")
     print("=" * 50)
@@ -54,4 +53,5 @@ def multiplication_trainer():
 
 
 multiplication_trainer()
+
 
