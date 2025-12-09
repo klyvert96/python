@@ -1,5 +1,5 @@
 ﻿def get_input_sequence():
-    """Функция ввода и проверки корректности строки"""
+    
     while True:
         seq = input("Введите последовательность пакетов (0 и 1, длина ≥ 5): ")
         if len(seq) < 5:
@@ -14,7 +14,7 @@ def analyze_sequence(seq):
     total_packets = len(seq)
     lost_packets = seq.count('0')
 
-    # Находим длину самой длинной последовательности потерянных пакетов
+    
     max_lost_streak = 0
     current_streak = 0
     for c in seq:
@@ -27,7 +27,7 @@ def analyze_sequence(seq):
 
     loss_percent = (lost_packets / total_packets) * 100
 
-    # Оценка качества связи
+   
     if loss_percent <= 1:
         quality = "Отличное качество"
     elif loss_percent <= 5:
@@ -52,6 +52,6 @@ def main():
     print(f"Процент потерь: {percent:.2f}%")
     print(f"Оценка качества связи: {quality}")
 
-if __name__ == "__main__":
-    main()
+main()
+
 
